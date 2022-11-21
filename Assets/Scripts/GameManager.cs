@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject score;
     private void Awake()
     {
+        Application.targetFrameRate = 60;
         bottomLeft = Camera.main.ScreenToWorldPoint(new Vector2(0, 0));
     }
     
